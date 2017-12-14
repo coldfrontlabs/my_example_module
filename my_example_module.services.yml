@@ -1,0 +1,9 @@
+services:
+  my_example_module.my_service:
+    class: Drupal\my_example_module\MyModuleService
+    arguments: ['Hello example']
+  my_example_module.dependency_service:
+    class: Drupal\my_example_module\DependencyService
+    arguments: ['@language.default']
+
+
