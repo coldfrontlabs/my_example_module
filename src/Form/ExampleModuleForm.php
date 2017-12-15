@@ -33,6 +33,12 @@ class ExampleModuleForm extends FormBase {
       '#suffix' => '</div>',
     ];
 
+    $form['system_state_text'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('System state'),
+      '#default_value' => \Drupal::state()->get('my_module_exampe_system_state_text'),
+    ];
+
     $form['actions']['preview'] = [
       '#type' => 'submit',
       '#value' => t('Test'),
@@ -46,5 +52,6 @@ class ExampleModuleForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     // Do something.
+    \Drupal::state()->set('my_module_exampe_system_state_text', $form_state->getValue('system_state_text'));
   }
 }
