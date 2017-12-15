@@ -1,0 +1,5 @@
+my_example_module.settings:
+  title: 'My Example Module settings'
+  description: 'Example of the links.menu file'
+  route_name: my_example_module.settings
+  parent: 'system.admin_config_development'

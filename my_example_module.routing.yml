@@ -5,3 +5,10 @@ my_example_module.example_form:
     _title: 'My Example Module Form'
   requirements:
     _permission: 'administer site configuration'
+my_example_module.settings:
+  path: '/admin/config/my_example_module'
+  defaults:
+    _form: '\Drupal\my_example_module\Form\ExampleModuleConfigurationForm'
+    _title: 'My Example Configuration Settings'
+  requirements:
+    _permission: 'administer site configuration'
