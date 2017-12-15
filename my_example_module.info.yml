@@ -1,5 +1,11 @@
-type: module
 name: My Example Module
 description: 'My test example module for development purpose and example.'
 package: Example
+
 core: 8.x
+type: module
+
+dependencies:
+  - block
+
+configure: my_example_module.settings
