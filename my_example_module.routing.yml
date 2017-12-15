@@ -1,0 +1,7 @@
+my_example_module.example_form:
+  path: '/my_example_module_form'
+  defaults:
+    _form: '\Drupal\my_example_module\Form\ExampleModuleForm'
+    _title: 'My Example Module Form'
+  requirements:
+    _permission: 'administer site configuration'
